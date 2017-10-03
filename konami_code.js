@@ -3,8 +3,9 @@ function init() {
   const body = document.body
   var i = 0
     function onKey(e) {
-      console.log(e.key)
-      if (e.key === code[i]){
+      const key = parseInt(e.detail || e.key)
+      console.log(key)
+      if (key === code[i]){
         i++
         if (i === code.length - 1){
           console.log(alert("You did it!"))
