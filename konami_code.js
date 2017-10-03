@@ -4,7 +4,7 @@ function init() {
   var i = 0
     function onKey(e) {
       console.log(e.key)
-      if (e.which === code[i]){
+      if (e.key === code[i]){
         i++
         if (i === code.length - 1){
           console.log(alert("You did it!"))
