@@ -3,7 +3,7 @@ function init() {
   const body = document.body
   var i = 0
     function onKey(e) {
-      console.log(e.which)
+      console.log(e.key)
       if (e.which === code[i]){
         i++
         if (i === code.length - 1){
